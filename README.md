@@ -53,3 +53,51 @@ The system first detects faces using OpenCV’s Haar Cascade classifier, preproc
 * OpenCV
 * TensorFlow / Keras
 * NumPy
+
+
+Here is a **matching, clean README section** for **Face Recognition**, written in the **same style and level of detail** as your emotion detection section.
+
+---
+
+## 2. Face Recognition Using Computer Vision
+
+The system captures images from a webcam, detects human faces, and identifies individuals by comparing facial features against known reference images stored locally.
+
+---
+
+## Key Features
+
+* Real-time face recognition using webcam input
+* Face detection using the `face_recognition` library
+* Support for multiple known individuals via reference images
+* Bounding box and name label displayed on detected faces
+
+---
+
+## Recognition Method
+
+* Encodings from live images are compared with stored reference encodings
+* Euclidean distance is used to determine the closest match
+* Faces are labeled as **Unknown** if no match meets the similarity threshold
+
+---
+
+## Workflow
+
+1. Load reference images from the local repository
+2. Encode known faces into feature vectors
+3. Capture image from webcam
+4. Detect faces in the captured image
+5. Encode detected faces
+6. Compare encodings with known faces
+7. Display identity label on the image
+
+---
+
+## Tools & Technologies
+
+* Python
+* OpenCV
+* face_recognition
+* NumPy
+
